@@ -1,2 +1,1 @@
-# My-CV
-Curriculum Vitae
+https://seppeverhavert.github.io/My-CV/
