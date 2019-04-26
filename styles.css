@@ -8,13 +8,6 @@ html {
     position: relative;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: ". . . ." ". . . ." ". . . .";
-  }
-
 body {
     margin-top:5%;
     margin-left:5%;
@@ -22,9 +15,18 @@ body {
     background-color: rgba(204, 204, 204, 0.7);
 }
 
-img {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . . ." ". . . ." ". . . .";
+  }
+
+.profilepicture {
     border-radius: 50%;
     border: 1px #F24405 solid;
+    display: inline-block;
+    margin-left: 40%;
 }
 
 h1 {
