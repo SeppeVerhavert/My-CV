@@ -72,3 +72,20 @@ img.avatar {
     font-weight: 300;
     color: #F24405;
 }
+
+.links {
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.link-item svg {
+    margin-right: 6px;
+}
+
+/** EXPERIENCE **/
