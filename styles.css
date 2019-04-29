@@ -1,6 +1,9 @@
 html {
     box-sizing: border-box;
+    background-image: url(https://i.imgur.com/lDPtUWa.jpg);
+    height: 100%;
 }
+
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -9,7 +12,6 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
-    Background: #210140;
     color: #323232;
     max-width: 100%;
 }
@@ -36,8 +38,9 @@ a:hover {
     max-width: 960px;
     margin: 40px;
     padding:32px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
 }
 
 section {
