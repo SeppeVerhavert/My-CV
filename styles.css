@@ -1,14 +1,9 @@
 html {
     background-image: url("https://i.imgur.com/lDPtUWa.jpg");
-    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.me {
-    border-radius: 50%;
-    width: 100px;
 }
 
 * {
@@ -39,7 +34,6 @@ html {
 .box1 {
     grid-column: 1;
     grid-row: 1;
-    background-color: black;
 }
 
 .box2 {
