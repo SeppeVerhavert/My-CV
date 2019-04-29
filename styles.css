@@ -175,4 +175,16 @@ reference-details {
         margin-right: 32px;
         margin-bottom: 16px;
     }
+
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 1.2;
+        color: #323232;
+        max-width: 100%;
+    }
+
+    .my-name {
+        font-size: 40px;
+        line-height: 1;
+    }
 }
