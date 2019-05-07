@@ -1,0 +1,36 @@
+$primaryColor:#323232;
+$accentColor:#F24405;
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    background-image: url("https://i.imgur.com/lDPtUWa.jpg");
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color:$primaryColor;
+    max-width: 100%;
+
+    section-main-info {
+
+        img.avatar {
+            width: 130px;
+        }
+    }
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none;
+    
+    :hover {
+        text-decoration: underline;
+        color: $accentColor;
+    }
+}
