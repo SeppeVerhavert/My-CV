@@ -10,6 +10,14 @@ html {
           box-sizing: inherit;
 }
 
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
@@ -17,7 +25,7 @@ body {
   max-width: 100%;
 }
 
-body div.container {
+body .container {
   max-width: 960px;
   margin: 40px;
   padding: 32px;
@@ -26,7 +34,7 @@ body div.container {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-body div.container section {
+body .container section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
@@ -36,39 +44,39 @@ body div.container section {
   border-bottom: 1px solid lightgrey;
 }
 
-body div.container section .section-title {
+body .container section .section-title {
   font-weight: bold;
   font-size: 18px;
   color: #F24405;
 }
 
-body div.container section last-child {
+body .container section last-child {
   border-bottom: none;
 }
 
-div.section-main-info img.avatar {
+body .container section .section-main-info img.avatar {
   width: 130px;
 }
 
-div.section-main-info div.my-name {
+.my-name {
   font-size: 48px;
   line-height: 1;
 }
 
-div.section-main-info div.my-title {
+.my-title {
   font-size: 24px;
   font-weight: 300;
   color: #F24405;
 }
 
-div.section-main-info div.links {
+.links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 10px 0 20px 0;
 }
 
-div.section-main-info div.link-item {
+.link-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,25 +88,56 @@ div.section-main-info div.link-item {
           flex: 1;
 }
 
-div.section-main-info div.link-item svg {
+.link-item svg {
   margin-right: 6px;
-}
-
-a {
   color: #323232;
   text-decoration: none;
 }
 
-a :hover {
+.link-item svg :hover {
   text-decoration: underline;
   color: #F24405;
 }
 
-.icon {
-  fill: currentColor;
-  display: inline-block;
-  font-size: inherit;
-  height: 1em;
-  overflow: visible;
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+section .section-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #F24405;
+}
+
+section .section-title .job {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgray;
+}
+
+section .section-title .job :last-child {
+  border-bottom: none;
+}
+
+section .section-title .job .job-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+section .section-title .job .job-title-container .job-company {
+  font-weight: bold;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=styles.css.map */
