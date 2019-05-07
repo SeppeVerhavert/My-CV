@@ -44,14 +44,14 @@ body .container section {
   border-bottom: 1px solid lightgrey;
 }
 
+body .container section last-child {
+  border-bottom: none;
+}
+
 body .container section .section-title {
   font-weight: bold;
   font-size: 18px;
   color: #F24405;
-}
-
-body .container section last-child {
-  border-bottom: none;
 }
 
 body .container section .section-main-info img.avatar {
@@ -88,15 +88,18 @@ body .container section .section-main-info img.avatar {
           flex: 1;
 }
 
-.link-item svg {
-  margin-right: 6px;
+.link-item a {
   color: #323232;
   text-decoration: none;
 }
 
-.link-item svg :hover {
+.link-item a a:hover {
   text-decoration: underline;
   color: #F24405;
+}
+
+.link-item svg {
+  margin-right: 6px;
 }
 
 section {
@@ -107,6 +110,10 @@ section {
   grid-gap: 20px;
   padding: 24px 0;
   border-bottom: 1px solid lightgrey;
+}
+
+section last-child {
+  border-bottom: none;
 }
 
 section .section-title {

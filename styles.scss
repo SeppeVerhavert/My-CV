@@ -3,6 +3,7 @@ $accentColor:#F24405;
 $backgroundColor: rgba(255, 255, 255, 0.9);
 
 $fontbold: bold;
+$fontsize: 24px;
 
 $padding:24px;
 
@@ -15,12 +16,26 @@ $displayinlineblock: inline-block;
     grid-gap: 20px;
     padding: $padding 0;
     border-bottom: 1px solid lightgrey;
+
+    last-child {
+        border-bottom: none;
+    }
 }
 
 @mixin section-title {
     font-weight: $fontbold;
-    font-size: 18px;
+    font-size: $fontsize*3/4;
     color: $accentColor;
+}
+
+@mixin a {
+    color: $primaryColor;
+    text-decoration: none;
+    
+    a:hover {
+        text-decoration: underline;
+        color: $accentColor;
+    }
 }
 
 html {
@@ -31,17 +46,6 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-
-@mixin a {
-    color: $primaryColor;
-    text-decoration: none;
-    
-    :hover {
-        text-decoration: underline;
-        color: $accentColor;
-    }
 }
 
 .icon {
@@ -72,10 +76,6 @@ body {
                 @include section-title;
             }
 
-            last-child {
-                border-bottom: none;
-            }
-
             .section-main-info {
 
                 img.avatar {
@@ -93,12 +93,12 @@ body {
 //MAIN INFO//
 
 .my-name {
-    font-size: 48px;
+    font-size: $fontsize*2;
     line-height: 1;
 }
 
 .my-title {
-    font-size: 24px;
+    font-size: $fontsize;
     font-weight: 300;
     color: $accentColor;
 }
@@ -106,17 +106,23 @@ body {
 .links {
     display: $displayflex;
     margin: 10px 0 20px 0;
+    
 }
 
 .link-item {
     display: $displayflex;
     align-items: center;
     flex: 1;
+
+    a {
+        @include a;
+    }
+    
 }
 
 .link-item svg {
     margin-right: 6px;
-    @include a;
+    
 }
 
 //EXPERIENCE//
@@ -141,10 +147,10 @@ section {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 20px;
-                font-size: 18px;
+                font-size: $fontsize*3/4;
 
                 .job-company{
-                    font-weight: bold;
+                    font-weight: $fontbold;
                     line-height: 1.2;
 
                 }
