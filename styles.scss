@@ -1,4 +1,107 @@
 $primaryColor:#323232;
 $accentColor:#F24405;
-$backgroundColor: rgba(255, 255, 255, 0.9)
+$backgroundColor: rgba(255, 255, 255, 0.9);
 
+$fontbold: bold;
+
+$padding:24px;
+
+html {
+    height: 100%;
+    background-image: url("https://i.imgur.com/lDPtUWa.jpg");
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color:$primaryColor;
+    max-width: 100%;
+
+    div.container {
+        max-width: 960px;
+        margin: 40px;
+        padding:$padding*4/3;
+        background: $backgroundColor;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+        section {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 20px;
+            padding: $padding 0;
+            border-bottom: 1px solid lightgrey;
+
+            .section-title {
+                font-weight: $fontbold;
+                font-size: 18px;
+                color: $accentColor
+            }
+
+            last-child {
+                border-bottom: none;
+            }
+
+
+        }
+    
+    }
+
+}
+
+//MAIN INFO//
+
+div.section-main-info {
+
+    img.avatar {
+        width: 130px;
+    }
+    
+    div.my-name {
+        font-size: 48px;
+        line-height: 1;
+    }
+    
+    div.my-title {
+        font-size: 24px;
+        font-weight: 300;
+        color: $accentColor;
+    }
+    
+    div.links {
+        display: flex;
+        margin: 10px 0 20px 0;
+    }
+    
+    div.link-item {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    
+    div.link-item svg {
+        margin-right: 6px;
+    }
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none;
+    
+    :hover {
+        text-decoration: underline;
+        color: $accentColor;
+    }
+}
+
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+}
