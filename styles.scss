@@ -136,10 +136,6 @@ img.avatar {
     margin-bottom: $margin;
     border-bottom: 1px solid lightgray;
 
-    .job:last-child {
-        border-bottom: none;
-    }
-
     .job-title-container {
         display: flex;
         justify-content: space-between;
@@ -153,6 +149,10 @@ img.avatar {
 
     }
 
+    &:last-child {
+        border-bottom: none;
+    }
+
 }
 
 /** SKILLS **/
@@ -162,11 +162,12 @@ img.avatar {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin-bottom: $margin;
-}
 
-.skills-container ul {
-    margin-left: $margin;
-    list-style-type: disc;
+    ul {
+        margin-left: $margin;
+        list-style-type: disc;
+    }
+
 }
 
 /** INTERESTS **/

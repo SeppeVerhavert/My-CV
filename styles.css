@@ -110,10 +110,6 @@ img.avatar {
   border-bottom: 1px solid lightgray;
 }
 
-.job .job:last-child {
-  border-bottom: none;
-}
-
 .job .job-title-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +124,10 @@ img.avatar {
 .job .job-title-container .job-company {
   font-weight: bold;
   line-height: 1;
+}
+
+.job:last-child {
+  border-bottom: none;
 }
 
 /** SKILLS **/
