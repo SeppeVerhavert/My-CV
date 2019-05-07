@@ -175,22 +175,26 @@ img.avatar {
 .interests-container {
     display: flex;
     justify-content: space-between;
-}
 
-.interests-container img {
-    height: 35px;
-    opacity: 0.75;
+    img {
+        height: 35px;
+        opacity: 0.75;
+    }
+
 }
 
 /** REFERENCES **/
 
 .reference {
     font-size: $font-size*3/4;
+
+    reference-details {
+        margin-bottom: $margin;
+    }
+    
 }
 
-reference-details {
-    margin-bottom: $margin;
-}
+
 
 //PROGRESSIVE//
 
