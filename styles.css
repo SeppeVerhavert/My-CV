@@ -11,10 +11,10 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
   color: #323232;
   max-width: 100%;
+  line-height: 1.5;
 }
 
 .icon {
@@ -37,8 +37,8 @@ a:hover {
 
 .container {
   max-width: 960px;
-  margin: 40px;
-  padding: 32px;
+  margin: 48px;
+  padding: 36px;
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -54,14 +54,14 @@ section {
   border-bottom: 1px solid lightgrey;
 }
 
-section.last-child {
-  border-bottom: none;
-}
-
-.section-title {
+section .section-title {
   font-weight: bold;
   font-size: 18px;
   color: #F24405;
+}
+
+section section.last-child {
+  border-bottom: none;
 }
 
 /** MAIN INFO **/
@@ -84,10 +84,10 @@ img.avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px 0 20px 0;
+  margin: 12px 0 24px 0;
 }
 
-.link-item {
+.links .link-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +99,7 @@ img.avatar {
           flex: 1;
 }
 
-.link-item svg {
+.links .link-item .link-item svg {
   margin-right: 6px;
 }
 
@@ -121,13 +121,13 @@ img.avatar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 18px;
 }
 
 .job-company {
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 /** SKILLS **/
@@ -141,7 +141,7 @@ img.avatar {
 }
 
 .skills-container ul {
-  margin-left: 20px;
+  margin-left: 24px;
   list-style-type: disc;
 }
 
@@ -166,7 +166,7 @@ img.avatar {
 }
 
 reference-details {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -192,14 +192,14 @@ reference-details {
             justify-content: flex-start;
   }
   .interests-container img {
-    margin-right: 32px;
+    margin-right: 36px;
     margin-bottom: 16px;
   }
   body {
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.2;
+    font-family: "Source Sans Pro", sans-serif;
     color: #323232;
     max-width: 100%;
+    line-height: 1;
   }
   .my-name {
     font-size: 40px;
